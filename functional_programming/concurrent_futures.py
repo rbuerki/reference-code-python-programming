@@ -1,11 +1,7 @@
-import multiprocessing
+import concurrent.futures
 import os
 import shelve
 import time
-
-
-with shelve.open("record_shelf.shelf", "r") as shelf:
-    records = shelf["records"]
 
 
 def double_the_price_slowly(x):
@@ -17,12 +13,15 @@ def double_the_price_slowly(x):
 
 
 if __name__ == "__main__":
-    multiprocessing.freeze_support()
+
+    with shelve.open("data/record_shelf", "r") as shelf:
+        records = shelf["records"]
 
     start = time.time()
 
-    pool = multiprocessing.Pool(processes=len(records))
-    _ = pool.map(double_the_price_slowly, records)
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+        # with concurrent.futures.ProcessPoolExecutor() as executor:
+        _ = executor.map(double_the_price_slowly, records)
 
     end = time.time()
 
