@@ -1,0 +1,53 @@
+{
+    "snippets": [
+        {
+            "name": "imports_large",
+            "code": [
+                "from pprint import pprint",
+                "from tqdm import tqdm_notebook as tqdm",
+                "import datetime as dt",
+                "import numpy as np",
+                "import pandas as pd",
+                "",
+                "# Visualization - static plots",
+                "%matplotlib inline",
+                "import matplotlib.pyplot as plt",
+                "import seaborn as sns",
+                "plt.style.use('raph-base')",
+                "",
+                "# Visualization - Plotly",
+                "import plotly.graph_objects as go",
+                "import plotly.io as pio",
+                "pio.renderers.default = 'notebook_connected' # online only",
+                "pio.templates.default = 'plotly_white'",
+                "",
+                "# import plotly.express as px",
+                "# import plotly.io as pio",
+                "# pio.renderers.default = 'notebook_connected' # online only",
+                "# pio.templates.default = 'simple_white'",
+                "",
+                "pd.set_option('precision', 2)",
+                "pd.set_option('display.max_columns', 30)",
+                "pd.set_option('display.expand_frame_repr', False)",
+                "pd.set_option('max_colwidth', 800)",
+                "",
+                "%load_ext autoreload",
+                "%autoreload 2"
+            ]
+        },
+        {
+            "name": "imports_small",
+            "code": [
+                "import datetime as dt",
+                "import numpy as np",
+                "import pandas as pd",
+                "",
+                "# Visualization - static plots",
+                "%matplotlib inline",
+                "import matplotlib.pyplot as plt",
+                "import seaborn as sns",
+                "plt.style.use('raph-base')"
+            ]
+        }
+    ]
+}
