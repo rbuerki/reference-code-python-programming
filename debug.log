@@ -1,0 +1,8 @@
+[1011/220901.775:ERROR:directory_reader_win.cc(43)] FindFirstFile: Das System kann den angegebenen Pfad nicht finden. (0x3)
+[1011/221624.699:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\r2d4\AppData\Local\Microsoft\Edge\User Data\Crashpad\attachments\f4ba4883-643b-4cf9-80a8-66e64ea7a8df: Das System kann den angegebenen Pfad nicht finden. (0x3)
+[1011/221625.409:ERROR:process_reader_win.cc(155)] SuspendThread: Zugriff verweigert (0x5)
+[1011/221625.409:ERROR:process_reader_win.cc(155)] SuspendThread: Zugriff verweigert (0x5)
+[1011/221625.933:ERROR:process_reader_win.cc(155)] SuspendThread: Zugriff verweigert (0x5)
+[1011/221625.933:ERROR:process_reader_win.cc(155)] SuspendThread: Zugriff verweigert (0x5)
+[1011/221626.211:ERROR:process_reader_win.cc(155)] SuspendThread: Zugriff verweigert (0x5)
+[1011/221626.611:ERROR:process_reader_win.cc(155)] SuspendThread: Zugriff verweigert (0x5)
